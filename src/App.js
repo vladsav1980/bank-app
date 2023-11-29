@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import WelcomePage from "./pages/welcome";
 import SignupPage from "./pages/signup";
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path="/" element={<AuthRoute element={<WelcomePage />} />} />
             <Route
@@ -68,7 +68,7 @@ function App() {
               element={<PrivateRoute element={<TransactionPage />} />}
             />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </AuthProvider>
     </div>
   );
