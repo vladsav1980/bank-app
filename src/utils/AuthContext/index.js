@@ -1,4 +1,3 @@
-// AuthContext.js
 import React, { createContext, useReducer, useContext, useState } from "react";
 
 // Define action types
@@ -65,25 +64,24 @@ export const AuthProvider = ({ children }) => {
   };
 
   const confirmSignup = (newPassword) => {
-    // Отримайте поточні дані користувача
+    // Отримуємо поточні дані користувача
     const { users } = state;
 
-    // Отримайте поточний користувач (ви можете використовувати інші методи отримання користувача відповідно до вашої логіки)
     const currentUser = users.find((user) => user.email === userData.email);
 
     if (newPassword) {
       currentUser.password = newPassword;
 
-      // Оновіть стан контексту
+      // Оновлюємо стан контексту
       dispatch({ type: "PASSWORD_RECOVERY", payload: { users } });
       return;
     }
 
-    // Оновіть статус користувача на підтверджений
+    // Оновлюємо статус користувача на підтверджений
     if (currentUser) {
       currentUser.confirm = true;
 
-      // Оновіть стан контексту
+      // Оновлюємо стан контексту
       dispatch({ type: "CONFIRM_SIGNUP", payload: { users } });
     }
   };

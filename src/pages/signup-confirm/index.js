@@ -1,7 +1,7 @@
-// components/SignupPage.js
+
 import React, { useState } from "react";
 import Input from "../../components/input";
-// import sendConfirmationCode from "../../utils/Mailer";
+
 
 import Page from "../../components/page";
 import BackButton from "../../components/backbutton";
@@ -40,7 +40,7 @@ const SignupConfirmPage = () => {
 
     const user = { ...userData, confirm: true, token };
 
-    authLogin(token, user); // Використовуйте authLogin
+    authLogin(token, user); 
 
     console.log(user);
 

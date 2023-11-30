@@ -1,7 +1,7 @@
 // components/SignupPage.js
 import React, { useState } from "react";
 import Input from "../../components/input";
-// import sendConfirmationCode from "../../utils/Mailer";
+
 import BackendSimulation from "../../utils/BackEnd";
 import Page from "../../components/page";
 import BackButton from "../../components/backbutton";
@@ -55,7 +55,7 @@ const ReceivePage = () => {
       return;
     }
 
-    // Перевірка наявності користувача в базі
+    
     const email = userData.email;
     const type = "Receipt";
 
@@ -71,9 +71,9 @@ const ReceivePage = () => {
   };
 
   const handleCoinbase = async () => {
-    // Перевірка пароля
+    
 
-    // Перевірка емейла
+    // Перевірка суми
     const isAmountValid = validateAmount(amount);
     setIsValidAmount(isAmountValid);
 
@@ -83,7 +83,7 @@ const ReceivePage = () => {
       return;
     }
 
-    // Перевірка наявності користувача в базі
+   
     const email = userData.email;
     const type = "Receipt";
 

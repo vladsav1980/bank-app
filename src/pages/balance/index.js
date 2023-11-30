@@ -1,9 +1,9 @@
-// BalancePage.js
+
 import React from "react";
 import { Link } from "react-router-dom";
-// import { useAuth } from "../../utils/AuthContext";
+
 import Page from "../../components/page";
-// import { UPDATE_TRANSACTIONS } from "../../utils/AuthContext";
+
 import { useNavigate } from "react-router-dom";
 
 import "./index.css";

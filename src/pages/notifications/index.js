@@ -1,4 +1,3 @@
-// components/SignupPage.js
 import React, { useState } from "react";
 
 import BackendSimulation from "../../utils/BackEnd";

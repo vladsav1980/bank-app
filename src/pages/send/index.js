@@ -1,7 +1,7 @@
-// components/SignupPage.js
+
 import React, { useState } from "react";
 import Input from "../../components/input";
-// import sendConfirmationCode from "../../utils/Mailer";
+
 import BackendSimulation from "../../utils/BackEnd";
 import Page from "../../components/page";
 import BackButton from "../../components/backbutton";
@@ -51,7 +51,7 @@ const SendPage = () => {
   
 
   const handleSend = async () => {
-    // Перевірка пароля
+   
 
     // Перевірка емейла
     const isAmountValid = validateAmount(amount);
@@ -67,13 +67,13 @@ const SendPage = () => {
       return;
     }
 
-    // Перевірка наявності користувача в базі
+    
     const email1 = userData.email;
     const type = "Sending";
 
     const username = email.split("@")[0];
 
-    // Робимо першу літеру великою
+    // Перетворюємо емейл на ім'я отримувача, робимо першу літеру великою
     const capitalizedUsername =
       username.charAt(0).toUpperCase() + username.slice(1);
 

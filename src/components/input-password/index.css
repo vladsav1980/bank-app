@@ -1,4 +1,4 @@
-/* Додайте це в ваш файл стилів (наприклад, index.css) */
+
 
 .field {
   display: flex;
@@ -30,8 +30,7 @@
 }
 
 .password-toggle-button::after {
-  content: url("./show.svg"); /* Замініть шлях на вашу іконку для показу пароля */
-  position: absolute;
+  content: url("./show.svg"); 
   top: 30px;
   right: 30px;
   transform: translateY(-50%);
@@ -39,7 +38,7 @@
 }
 
 .password-toggle-button.show-password::after {
-  content: url("./hide.svg"); /* Замініть шлях на вашу іконку для приховання пароля */
+  content: url("./hide.svg"); 
 }
 
 .field__error {

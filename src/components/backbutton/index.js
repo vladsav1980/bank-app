@@ -15,7 +15,7 @@ const BackButton = () => {
 
   return (
     <div className="arrowback" style={{ cursor: "pointer" }} onClick={goBack}>
-      {/* Символ стрілки вліво (можна використати ваш власний стиль або знайти готовий значок) */}
+    
       <img src={back_logo} alt="icon" />
     </div>
   );

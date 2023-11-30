@@ -8,11 +8,7 @@ const BackendSimulation = () => {
   const { users } = state || {};
 
   const sendCode = () => {
-    // Відправка коду на вказаний email
     const confirmationCode = Math.floor(100000 + Math.random() * 900000);
-    // const isEmailSent = await sendConfirmationCode(email, confirmationCode);
-
-    // const customConfirm = window.confirm;
 
     window.confirm(`Код підтвердження: ${confirmationCode}`);
 
@@ -48,7 +44,6 @@ const BackendSimulation = () => {
         paymentSystem: "Stripe",
         time: "2023-11-16T10:30:00",
       },
-      // Додайте інші транзакції за необхідності
     ];
     const newUser = {
       email,
@@ -87,8 +82,6 @@ const BackendSimulation = () => {
   };
 
   const getusertransactions = () => {
-    // Знайти користувача за ID
-
     const user = users.find((u) => u.email === userData.email);
 
     user.balance = user.transactions.reduce(
@@ -101,8 +94,6 @@ const BackendSimulation = () => {
   };
 
   const getbalance = () => {
-    // Знайти користувача за ID
-
     const user = users.find((u) => u.email === userData.email);
 
     return user.balance;
@@ -143,8 +134,6 @@ const BackendSimulation = () => {
   };
 
   const getusernotifications = () => {
-    // Знайти користувача за ID
-
     const user = users.find((u) => u.email === userData.email);
 
     return user.notifications;

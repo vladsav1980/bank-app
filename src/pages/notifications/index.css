@@ -44,11 +44,10 @@ h3 {
 
 .dollar-icon {
   position: absolute;
-  left: 27px; /* або інша відстань від лівого краю інпуту */
-  top: 50%;
+  left: 27px;
   transform: translateY(-50%);
   z-index: 1;
-  color: #555; /* колір значка */
+  color: #555;
 }
 
 .payment-logos {

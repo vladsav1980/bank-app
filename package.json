@@ -2,6 +2,7 @@
   "name": "bank-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vladsav1980.github.io/bank-app-itbrains",
   "dependencies": {
     "@react-email/render": "^0.0.9",
     "@testing-library/jest-dom": "^5.17.0",

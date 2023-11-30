@@ -1,4 +1,4 @@
-// components/SignupPage.js
+
 import React from "react";
 
 import BackendSimulation from "../../utils/BackEnd";

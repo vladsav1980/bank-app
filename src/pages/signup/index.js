@@ -1,7 +1,7 @@
-// components/SignupPage.js
+
 import React, { useState } from "react";
 import Input from "../../components/input";
-// import sendConfirmationCode from "../../utils/Mailer";
+
 import BackendSimulation from "../../utils/BackEnd";
 import Page from "../../components/page";
 import BackButton from "../../components/backbutton";
@@ -69,7 +69,7 @@ const SignupPage = () => {
     const confirmationCode = backend.sendCode();
 
     // Перехід на сторінку підтвердження
-    // Ви можете передати дані користувача та код через navigate або контекст
+    
     const userData = { email, password };
     updateUserData(userData);
     updateConfirmationCode(confirmationCode);

@@ -1,7 +1,6 @@
-// components/SignupPage.js
 import React, { useState } from "react";
 import Input from "../../components/input";
-// import sendConfirmationCode from "../../utils/Mailer";
+
 import BackendSimulation from "../../utils/BackEnd";
 import Page from "../../components/page";
 import BackButton from "../../components/backbutton";
@@ -80,8 +79,6 @@ const SettingsPage = () => {
   };
 
   const handleChangeMail = async () => {
-    // Перевірка пароля
-
     // Перевірка емейла
     const isEmailValid = validateEmail(email);
     setIsValidEmail(isEmailValid);
@@ -92,7 +89,6 @@ const SettingsPage = () => {
       return;
     }
 
-    // Перевірка наявності користувача в базі
     const changeMailResult = backend.changemail(email, password1);
 
     if (!changeMailResult.success) {
@@ -101,8 +97,6 @@ const SettingsPage = () => {
       return;
     }
 
-    // Перехід на сторінку підтвердження
-    // Ви можете передати дані користувача та код через navigate або контекст
     const newUserData = { email };
     updateUserData(newUserData);
     userData.email = email;
